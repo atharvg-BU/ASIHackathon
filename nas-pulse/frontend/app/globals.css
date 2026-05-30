@@ -1,0 +1,29 @@
+@import "leaflet/dist/leaflet.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: #071019;
+  color: #e8f4ff;
+}
+
+.leaflet-container {
+  background: #071019;
+}
+
+.glass {
+  background: linear-gradient(180deg, rgba(20, 34, 49, 0.95), rgba(10, 19, 29, 0.95));
+  border: 1px solid rgba(117, 202, 255, 0.18);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.26);
+}
+
+.risk-low { color: #8cf7b1; }
+.risk-medium { color: #ffe66b; }
+.risk-high { color: #ffbc58; }
+.risk-severe { color: #ff5b6e; }

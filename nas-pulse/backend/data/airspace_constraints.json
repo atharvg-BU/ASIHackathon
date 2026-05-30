@@ -1,0 +1,11 @@
+[
+  {
+    "id": "ZAU_CONSTRAINT_001",
+    "type": "sector_capacity_reduction",
+    "name": "Chicago corridor capacity reduction",
+    "start_time_utc": "14:00",
+    "end_time_utc": "17:00",
+    "capacity_reduction_percent": 45,
+    "polygon": [[39.2, -92.0], [44.0, -91.6], [44.3, -84.0], [39.4, -83.9]]
+  }
+]

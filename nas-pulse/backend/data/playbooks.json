@@ -1,0 +1,11 @@
+[
+  {
+    "id": "PLAYBOOK_NORTH_REROUTE",
+    "trigger": "convective weather near Chicago corridor",
+    "recommended_actions": [
+      "Use northern reroute corridor for east-west traffic",
+      "Prefer ground holds for flights not yet departed",
+      "Avoid rerouting already airborne flights unless risk is severe"
+    ]
+  }
+]

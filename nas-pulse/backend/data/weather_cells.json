@@ -1,0 +1,11 @@
+[
+  {
+    "id": "WX_CHI_001",
+    "type": "convective",
+    "severity": 0.85,
+    "start_time_utc": "14:00",
+    "end_time_utc": "17:00",
+    "polygon": [[39.6, -91.2], [43.7, -90.4], [43.9, -84.8], [40.0, -84.6]],
+    "description": "Convective weather reducing usable capacity near Chicago corridor"
+  }
+]

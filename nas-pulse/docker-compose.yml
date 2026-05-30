@@ -1,0 +1,24 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    environment:
+      - USE_LLM_CHAT=${USE_LLM_CHAT:-true}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-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}
+      - ANTHROPIC_MODEL=${ANTHROPIC_MODEL:-claude-opus-4-8}
+      - HACKATHON_DATA_BUNDLE_DIR=/data/hackathon_data_bundle
+      - BUNDLE_ROUTES_FILE=asked_at_2025-06-10T17:00:00Z/routes.json
+      - BUNDLE_FLIGHT_LIMIT=180
+    volumes:
+      - ../hackathon_data_bundle:/data/hackathon_data_bundle:ro
+    ports:
+      - "8000:8000"
+  frontend:
+    build:
+      context: ./frontend
+    environment:
+      - NEXT_PUBLIC_API_BASE=http://localhost:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
